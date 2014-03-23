@@ -17,6 +17,9 @@ gem 'sass-rails', '~> 4.0.0'
 
 gem 'railties', '~> 4.0.3'
 
+# for creating user permissions etc...
+# gem 'CanCan'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
