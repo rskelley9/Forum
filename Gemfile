@@ -17,6 +17,10 @@ gem 'sass-rails', '~> 4.0.0'
 
 gem 'railties', '~> 4.0.3'
 
+gem 'forem-textile_formatter'
+
+gem 'forem-bootstrap', :github => "radar/forem-bootstrap"
+
 # for creating user permissions etc...
 # gem 'CanCan'
 
