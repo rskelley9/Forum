@@ -7,10 +7,14 @@ GWForum::Application.routes.draw do
   # We ask that you don't use the :as option here, as Forem relies on it being the default of "forem"
   mount Forem::Engine, :at => '/forums'
 
+  # root to: "forem/forums#index"
+
+  root to: "home#index"
+
 
   devise_for :users
 
-  root "forem/forums#index"
+  # match 'users/:id', :to => "users#show", :as => :user
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
