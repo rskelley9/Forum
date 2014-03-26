@@ -7,38 +7,14 @@
   <%= csrf_meta_tags %>
 
   <%= stylesheet_link_tag "forem" %>
-<%= javascript_include_tag "forem" %>
+  <%= javascript_include_tag "forem" %>
 </head>
 <body>
-<header>
-  <nav>
-    <% if user_signed_in? %>
-      <%= link_to current_user.email, main_app.edit_user_registration_path %>
-      | <%= link_to "Sign out", main_app.destroy_user_session_path, :method => :delete %>
-      <% if current_user.forem_admin %>
-          | <%= link_to "Administrate", forem.admin_root_url %>
-      <% end %>
-    <% else %>
-      <%= link_to "Sign up", main_app.new_user_registration_path %>
-      | <%= link_to "Sign in", main_app.new_user_session_path %>
-    <% end %>
-  </nav>
-</header>
+  <header>
 
-<!-- <ul class="nav">
-  <li class="active"><a href="/ideas">Ideas</a></li>
-</ul>
- -->
-<!-- <p class="navbar-text pull-right">
-<% if user_signed_in? %>
-  Logged in as <strong><%= current_user.email %></strong>.
-  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-<% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-<% end %>
- -->
+
+    <%= render "layouts/navbar"%>
+  </header>
 
   <% if notice %>
   <p class="alert alert-notice"><%= notice %></p>

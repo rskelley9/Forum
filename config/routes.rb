@@ -9,9 +9,9 @@ GWForum::Application.routes.draw do
 
   # root to: "forem/forums#index"
 
-  root to: "home#index"
+  root to: "home#main"
 
-
+  get "/main" => 'home#main'
   devise_for :users
 
   # match 'users/:id', :to => "users#show", :as => :user
