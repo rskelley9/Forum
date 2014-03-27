@@ -21,6 +21,15 @@ GIT
       bootstrap-sass (~> 3.1)
 
 GIT
+  remote: git://github.com/radar/forem-redcarpet
+  revision: c53be9a5c3e97d65546f3f56b53f82669f3a5af5
+  specs:
+    forem-redcarpet (1.0.2)
+      nokogiri
+      pygments.rb (= 0.5.4)
+      redcarpet (= 3.0.0)
+
+GIT
   remote: git://github.com/radar/forem.git
   revision: e5b52f1375ea1720a3d2e0905ba7c40e137f919b
   branch: rails4
@@ -124,7 +133,7 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.2)
     mime-types (1.25.1)
-    mini_portile (0.5.2)
+    mini_portile (0.5.3)
     minitest (4.7.5)
     multi_json (1.9.2)
     nokogiri (1.6.1)
@@ -138,6 +147,9 @@ GEM
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
+    pygments.rb (0.5.4)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.1.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -159,10 +171,10 @@ GEM
       activesupport (= 4.0.3)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.1.1)
+    rake (10.2.1)
     rdoc (4.1.1)
       json (~> 1.4)
-    redcarpet (3.1.1)
+    redcarpet (3.0.0)
     sanitize (2.0.6)
       nokogiri (>= 1.4.4)
     sass (3.2.18)
@@ -189,7 +201,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    thor (0.19.0)
+    thor (0.19.1)
     thread_safe (0.3.1)
       atomic (>= 1.1.7, < 2)
     tilt (1.4.1)
@@ -205,6 +217,7 @@ GEM
     warden (1.2.3)
       rack (>= 1.0)
     workflow (1.0.0)
+    yajl-ruby (1.1.0)
 
 PLATFORMS
   ruby
@@ -217,6 +230,7 @@ DEPENDENCIES
   devise (= 3.0.0)
   forem!
   forem-bootstrap!
+  forem-redcarpet!
   forem-textile_formatter
   friendly_id (~> 5.0.2)
   jbuilder (~> 1.2)
