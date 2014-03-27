@@ -4,6 +4,7 @@ Forem.email_from_address = "please-change-me@example.com"
 # Forem.avatar_user_method = :custom_avatar_url
 Forem.per_page = 20
 Forem.moderate_first_post = false
+Forem.user_profile_links = true
 
 
 # Rails.application.config.to_prepare do

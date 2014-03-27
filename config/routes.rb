@@ -7,12 +7,17 @@ GWForum::Application.routes.draw do
   # We ask that you don't use the :as option here, as Forem relies on it being the default of "forem"
   mount Forem::Engine, :at => '/forums'
 
+  mount Blogit::Engine => "/blog"
+
   # root to: "forem/forums#index"
 
   root to: "home#main"
 
-  get "/main" => 'home#main'
+  get '/main' => 'home#main'
+
   devise_for :users
+
+  resources :users
 
   # match 'users/:id', :to => "users#show", :as => :user
 

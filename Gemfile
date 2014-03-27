@@ -41,11 +41,15 @@ gem 'cancan', git: "https://github.com/nukturnal/cancan.git"
 
 gem 'bootstrap-sass', '~> 3.1'
 
+gem 'blogit', github: "katanacode/blogit"
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+
+gem 'friendly_id', '~> 5.0.2'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
