@@ -16,6 +16,8 @@ gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+gem 'forem-redcarpet', :git => "git://github.com/radar/forem-redcarpet"
+
 gem 'railties', '~> 4.0.3'
 
 gem 'forem-textile_formatter'
