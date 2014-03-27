@@ -19,9 +19,9 @@ class User < ActiveRecord::Base
 
   # It also uses an optional forem_email method for displaying avatars using Gravatar. It defaults to email. If you don't have an email attribute on the model, define a new method:
 
-  # def forem_email
-  #   email_address
-  # end
+  def forem_email
+    email
+  end
 
 
 end
